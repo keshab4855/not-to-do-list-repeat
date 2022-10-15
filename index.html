@@ -25,13 +25,13 @@
                 </div>
             </div>
             <!-- Form area -->
-            <form action="">
+            <form action="javascript:void(0)" onsubmit="handleOnSubmit(this)">
                 <div class="row mt-3 g-2">
                     <div class="col-md-6">
-                        <input type="text" class="form-control" aria-label="First name">
+                        <input type="text" class="form-control" name="task" placeholder="Tasks" required>
                     </div>
                     <div class="col-md-3">
-                        <input type="text" class="form-control" aria-label="Last name">
+                        <input type="number" class="form-control" name="hr" placeholder="Hours" required>
                     </div>
                     <div class="col-md-3 d-grid gap-2">
 
@@ -48,8 +48,8 @@
                     <h2 class="text-center">Entry List</h2>
                     <hr>
                     <table class="table table-striped table-hover">
-                        <tbody>
-                            <tr>
+                        <tbody id="task-list">
+                            <!-- <tr>
                                 <th scope="row">1</th>
                                 <td>Watching TV</td>
                                 <td>50 hrs</td>
@@ -59,40 +59,8 @@
                                     <button type="button" class="btn btn-primary btn-sm"><i
                                             class="fa-solid fa-arrow-right"></i></button>
                                 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Watching TV</td>
-                                <td>50 hrs</td>
-                                <td>
-                                    <button type="button" class="btn btn-danger btn-sm"><i
-                                            class="fa-solid fa-trash"></i></button>
-                                    <button type="button" class="btn btn-primary btn-sm"><i
-                                            class="fa-solid fa-arrow-right"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Watching TV</td>
-                                <td>50 hrs</td>
-                                <td>
-                                    <button type="button" class="btn btn-danger btn-sm"><i
-                                            class="fa-solid fa-trash"></i></button>
-                                    <button type="button" class="btn btn-primary btn-sm"><i
-                                            class="fa-solid fa-arrow-right"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Watching TV</td>
-                                <td>50 hrs</td>
-                                <td>
-                                    <button type="button" class="btn btn-danger btn-sm"><i
-                                            class="fa-solid fa-trash"></i></button>
-                                    <button type="button" class="btn btn-primary btn-sm"><i
-                                            class="fa-solid fa-arrow-right"></i></button>
-                                </td>
-                            </tr>
+                            </tr> -->
+
                         </tbody>
                     </table>
                 </div>
